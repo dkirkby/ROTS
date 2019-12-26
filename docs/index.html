@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Thumbnail browser for DESI Commissioning Instrument exposures">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>ROTS</title>
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-orange.min.css">
+    <link rel="stylesheet" href="css/ROTS.css">
+  </head>
+
+  <body>
+
+    <!-- Always shows a header, even in smaller screens. -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <span class="mdl-layout-title">Crooz Central</span>
+            <!-- Add spacer, to align navigation to the right -->
+            <div class="mdl-layout-spacer"></div>
+            <!-- Navigation. We hide it in small screens. -->
+            <nav id="nav1" class="mdl-navigation mdl-layout--large-screen-only">
+            </nav>
+        </div>
+        </header>
+        <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Title</span>
+        <nav id="nav2" class="mdl-navigation">
+        </nav>
+        </div>
+        <main class="mdl-layout__content">
+            <div class="page-content">
+                <div id="Home" class="content-tab">
+                    <div id="countdown">
+                        <span id="label"></span>
+                        <span id="days">?</span> days
+                        <span id="hours">?</span> hours
+                        <span id="minutes">?</span> minutes
+                        <span id="seconds">?</span> seconds
+                    </div>
+                </div>
+                <div id="Weather" class="content-tab">
+                    <a class="weatherwidget-io" href="https://forecast7.com/en/27d95n82d46/tampa/" data-label_1="TAMPA" data-theme="clear" >TAMPA</a>
+                    <script>
+                    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+                    </script>
+                    <a class="weatherwidget-io" href="https://forecast7.com/en/20d51n86d94/san-miguel-de-cozumel/?unit=us" data-label_1="COZUMEL" data-theme="clear" >COZUMEL WEATHER</a>
+                    <script>
+                    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+                    </script>
+                    <a class="weatherwidget-io" href="https://forecast7.com/en/17d50n88d20/belize-city/?unit=us" data-label_1="BELIZE CITY" data-theme="clear" >BELIZE CITY</a>
+                    <script>
+                    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+                    </script>
+                    <a class="weatherwidget-io" href="https://forecast7.com/en/16d32n86d54/coxen-hole/?unit=us" data-label_1="ROATÁN" data-theme="clear" >ROATÁN</a>
+                    <script>
+                    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+                    </script>
+                    <a class="weatherwidget-io" href="https://forecast7.com/en/18d72n87d71/mahahual/?unit=us" data-label_1="COSTA MAYA" data-theme="clear" >COSTA MAYA</a>
+                    <script>
+                    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+                    </script>
+                </div>
+                <div id="Map" class="content-tab">
+                </div>
+                <div id="Location" class="content-tab">
+                </div>
+                <div id="Photos" class="content-tab">
+                    <img src="https://lh3.googleusercontent.com/h_tT2poeuGGw0yXIlp8eJSSywdItcrbJ1QAjHbLGGiQvMd_2cE610lK75jjSzwpOkR6uSGQ0riMe3SuTzkue_G5smrxQqxtThx8yKKAkf9mrbDyPe1mL8BQ8PHWdJJ4GzU4sYf7yFH0D7m2AM9AxwCZ8poiNm5cat_IVqeg1zABbf0lMuBdOfPo05d5T_crLU2wiMrc_D_hEy2FMnJKRpsaoh5eEn_nzrZo3Lf0veU3DYKAC027cKz3Pqgr_JDmVJ2Q8QLtJJEzPGz02aQz7-VL7JjhCyemuTGsSmq_IOQKSoeLSlGtvom2uu_T4NEmOUn-pgxiC6FhkTVgUg2yWo2WH-beiO7kETETSFwy74EWLzOFzpc1KHHVmz55OQBUqOCxlwOzA5lMneyoYzMZgVnfcjun6uI9bFa2HVCiNtLx9mAYxUY9gZ3okK8G8Dvr1bG1xG2WiPMtocStzgo1LRGG3AD3Mbd6zJ4htaKFso6OyvpBFm_ckZ2G-lS5ayuy_p6QAm6_lSQ2DSV7hF5rPofrHhUBapr11bVesLm132zWYkVrQv93Q2VFkEtCiOkqea3vUXd1IGvD6Fwl8PECrazxd5BH4hYy9XGHkAXXfks8dRngK3_h2dzsk5fHB4hxYnKbTKieYG4-SxzHxeUGBWnPylOenb2wDWPhQtCvfFBP1MqpOoTVZ6Gr0V1k59BIQONPKqE1l3LvHDqLoLppULPE0kr6pV93ZzTOb9FF7mKdchr0Q=w1988-h2650-no"></img>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/ROTS.js"></script>
+  </body>
+</html>

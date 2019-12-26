@@ -1,0 +1,18 @@
+.content-tab {
+    display: none;
+}
+
+#countdown {
+    margin: 32pt;
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+}
+
+.tablink {
+    cursor: pointer;
+}
+
+#Photos img {
+    width: 100%;
+}
