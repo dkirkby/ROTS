@@ -4,7 +4,7 @@ $(document).ready(function() {
 
 var currenttab = null;
 
-var departure = Date.parse('December 28 2019 18:00:00 GMT-0400');
+var departure = Date.parse('December 28 2019 16:00:00 GMT-0400');
 var timer = null;
 
 function update() {
@@ -27,7 +27,6 @@ var map1 = null;
 var map2 = null;
 
 function showtab(tabname) {
-    console.log(currenttab, '->', tabname);
     if(currenttab == tabname) return;
     if(currenttab != null) {
         $('#' + currenttab).toggle(false);
@@ -45,7 +44,6 @@ function showtab(tabname) {
 }
 
 function initialize() {
-    console.log("Initialize");
     var first = null;
     $(".content-tab").each(function(i) {
         var name = $(this).attr("id");
